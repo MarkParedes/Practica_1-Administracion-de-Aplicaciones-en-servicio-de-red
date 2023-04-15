@@ -243,5 +243,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as TCPServerSocket:
                         ClientConn.sendall(bytes("perdiste", "utf-8"))
                         partida = False
                         TCPServerSocket.close()
-
-
+                        

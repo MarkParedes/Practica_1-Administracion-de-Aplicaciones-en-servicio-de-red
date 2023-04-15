@@ -128,6 +128,3 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as TCPClientSocket:
                 print("¡Gano el servidor! ")
                 jugando = False
                 TCPClientSocket.close()
-
-
-
