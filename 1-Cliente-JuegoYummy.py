@@ -28,35 +28,6 @@ def imprimirTablero5x5(tablero5x5):
 def casillaLibre(tablero3x3, casilla):
     return tablero3x3[casilla] == " "
 
-#Se verifican los movimientos del cliente 3x3
-def movimientoCliente(tablero3x3):
-    posiciones=["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    posicion=None
-    while True:
-        if posicion not in posiciones:
-            posicion=input("Elige una posicion del 1 al 9:\n")
-        else:
-            posicion=int(posicion)
-            if not casillaLibre(tablero3x3, posicion-1):
-                print("Posicion ocupada.")
-            else:
-                return posicion-1
-
-#Movimientos Tablero5x5
-def movimientoCliente5x5(tablero5x5):
-    posiciones=["1", "2", "3", "4", "5", "6", "7", "8", "9","10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"]
-    posicion=None
-    while True:
-        if posicion not in posiciones:
-            posicion=input("Elige una posicion del 1 al 25:\n")
-        else:
-            posicion=int(posicion)
-            if not casillaLibre(tablero5x5, posicion-1):
-                print("Posicion ocupada.")
-            else:
-                return posicion-1
-
-
 # Variables para el cliente
 HOST = "127.0.0.1"
 PORT = 65432
